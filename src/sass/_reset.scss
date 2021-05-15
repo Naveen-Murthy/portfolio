@@ -1,0 +1,44 @@
+html,body{
+	height: 100vh;
+}
+body {
+	color: $white;
+	font-family: $ptSerf;
+	font-style: normal;
+	font-weight: 400;
+	font-size: $fs;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0;
+	line-height: 24px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+	:focus {
+		outline: none;
+	}
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	-webkit-tap-highlight-color: transparent;
+	&:focus{
+		outline: none;
+	}
+}
+p{
+	margin: 0;
+  }
+ol,
+ul {
+	list-style: none;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	display: block;
+	width: 100%;
+}

@@ -1,0 +1,99 @@
+/* Common Styles Start */
+
+.page {
+    overflow: hidden;
+}
+.full-width {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.restrict-width {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.m-hide {
+    display: block !important;
+    @include layout(426) {
+        display: none !important;
+    }
+}
+.m-show {
+    display: none !important;
+    @include layout(426) {
+        display: block !important;
+    }
+}
+.mob-d-hide {
+    display: flex !important;
+    @include layout(426) {
+        display: none !important;
+    }
+}
+.mob-d-show {
+    display: none !important;
+    @include layout(426) {
+        display: flex !important;
+    }
+}
+.tab-hide {
+    display: block !important;
+    @include layout(769) {
+        display: none !important;
+    }
+}
+.tab-show {
+    display: none !important;
+    @include layout(769) {
+        display: block !important;
+    }
+}
+.d-hide {
+    display: flex !important;
+    @include layout(769) {
+        display: none !important;
+    }
+}
+.d-show {
+    display: none !important;
+    @include layout(769) {
+        display: flex !important;
+    }
+}
+.hide {
+    display: none !important;
+}
+.show {
+    display: block !important;
+}
+.button-styles {
+	background: $black;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	box-shadow: 0 2px 9px 0 rgba(40,40,40,0.20);
+	border-radius: 6px;
+	font-weight: 500;
+	font-size: $fs+4;
+	border: none;
+	color: $white;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
+	@include layout(1279){
+		font-size: $fs+2;
+		padding: 0 20px;
+		min-height: 50px;
+	}
+	@include layout(426){
+		font-size: $fs+-2;
+		min-width: 130px;
+        min-height: 40px;
+    }
+    &.border{
+        color: $white;
+        background-color: $white;
+        border: 1px solid $black;
+    }
+}
