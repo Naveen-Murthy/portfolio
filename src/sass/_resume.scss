@@ -1,0 +1,31 @@
+/* For pdf */
+.react-pdf__Page {
+    margin-top: 10px;
+}
+
+.react-pdf__Page__textContent {
+    display: none;  
+}
+.react-pdf__Page__canvas{
+    border-radius: 6px;
+    border: 2px solid wheat;
+    box-shadow:1px 1px 5px 0px white;
+    max-width: 620px;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.react-pdf__Page__annotations.annotationLayer {
+    padding: 20px;
+}
+
+.react-pdf__Page__canvas {
+    margin: 0 auto;
+}
+.button_download{
+    width: 100%;
+    display: flex;
+    a{
+        margin: 0 auto;
+    }
+}

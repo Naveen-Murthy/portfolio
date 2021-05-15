@@ -3,6 +3,9 @@
 @import 'fonts';
 @import 'common';
 @import 'reset';
-@import '_app.scss';
-@import '_header.scss';
-@import '_landing.scss';
+@import 'app';
+@import 'header';
+@import 'landing';
+@import 'resume';
+@import 'projects';
+@import 'contact';

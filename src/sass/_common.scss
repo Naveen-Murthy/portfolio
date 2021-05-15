@@ -11,6 +11,18 @@
     max-width: 1366px;
     margin: 0 auto;
 }
+.main_page{
+    padding: 30px;
+    padding-top: 60px;
+    @include layout(768){
+        padding: 25px;
+        padding-top: 60px;
+    }
+    @include layout(425){
+        padding: 20px;
+        padding-top: 50px;
+    }
+}
 
 .m-hide {
     display: block !important;

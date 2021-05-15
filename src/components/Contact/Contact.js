@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Contact.css';
 
 class Contact extends Component {
   // constructor(props){
@@ -18,7 +17,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div>Contact</div>
+      <div className="main_page">Contact</div>
     );
   }
 }

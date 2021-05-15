@@ -38,7 +38,7 @@ class App extends Component {
     }
     render() {
         return (
-            <div>
+            <>
                 <header className="header-wrapper">
                     <NavLink to="/" className="header-text">My Portfolio</NavLink>
                     <div className="header_navigations">
@@ -53,7 +53,7 @@ class App extends Component {
                 <section className="page-wrapper">
                     <PageRouters/>
                 </section>
-            </div>
+            </>
         );
     }
 }

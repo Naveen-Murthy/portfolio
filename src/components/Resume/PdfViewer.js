@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = 'pdf.worker.min.js';
+pdfjs.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js";
 
 export default function PdfViewer(props) {
   const [pageNumber, setPageNumber] = useState(1); //setting 1 to show fisrt page
@@ -15,7 +15,6 @@ export default function PdfViewer(props) {
     <>
       <Document
         file={pdf}
-        options={{ workerSrc: "/pdf.worker.js" }}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} />
